@@ -51,7 +51,7 @@ class SignInForm extends Component {
                 type='submit' 
                 title='Login'
                 component={FormButton}/>
-                <Details className='sing-in-form__details' title='QuickLinks' links={links} />
+                <Details className='sign-in-form__details' title='QuickLinks' links={links} />
             </form>
         );
     }
