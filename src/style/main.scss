@@ -3,6 +3,7 @@
 @import './auth/signin.scss';
 @import './auth/signup.scss';
 @import './page-title.scss';
+@import './form-fields.scss';
 
 *,
 *::after,
@@ -14,4 +15,9 @@
 
 html {
     font-size: 62.5%;
+}
+
+body {
+    color: #808080;
+    font-family: 'Open Sans';
 }
