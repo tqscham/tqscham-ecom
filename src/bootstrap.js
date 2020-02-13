@@ -9,6 +9,7 @@ import Layout from "./components/layout";
 import history from './history';
 import SignIn from './components/auth/signin';
 import SignUp from './components/auth/signup';
+import Account from './components/account/account'
 
 const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ?
   window.devToolsExtension() :
@@ -25,6 +26,7 @@ function main() {
             <Route path='/' exact component={SignIn}/>
             <Route path='/signin' exact component={SignIn}/>
             <Route path='/signup' exact component={SignUp}/>
+            <Route path='/account' exact component={Account}/>
           </Switch>
         </Layout>
       </Router>
