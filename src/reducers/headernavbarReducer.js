@@ -8,7 +8,7 @@ import {
 const INITIAL_STATE = {
     headerLinks: [
         {
-            title: 'head accoutn'
+            title: 'head account'
         },
         {
             title: 'head purchases'
@@ -16,10 +16,12 @@ const INITIAL_STATE = {
     ],
     navbarLinks: [
         {
-            title: 'account'
+            title: 'account',
+            active: true
         },
         {
-            title: 'purchases'
+            title: 'purchases',
+            active: false
         }
     ]
 }
