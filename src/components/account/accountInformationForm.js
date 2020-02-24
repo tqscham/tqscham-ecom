@@ -112,15 +112,6 @@ class AccountInformationForm extends Component {
             
             <div className='account-information-form__line'></div>
 
-                
-                {/*<div className='account-information-form__line'></div>
-                
-                <Field className='account-information-form__login' 
-                onClick={() => history.push('/account')}
-                name='login' 
-                type='submit' 
-                title='Login'
-                component={FormButton}/> */}
             </form>
         );
     }
