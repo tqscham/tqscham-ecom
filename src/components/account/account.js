@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 import * as actions from '../../actions';
 import AccountInformation from './accountInformation';
@@ -56,6 +58,7 @@ class Account extends Component {
     render() {
         return (
             <div className='account'>
+            <FontAwesomeIcon icon='at' />
                 { this.renderContent() }
             </div>
         );

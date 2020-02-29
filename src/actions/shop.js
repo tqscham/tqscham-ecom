@@ -28,49 +28,49 @@ export function fetchShopProducts() {
             {
                 _id: 0,
                 title: 'JavaScript in the Browser',
-                description: 'Filler',
+                description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
                 belongsTo: [0, 1]
             },
             {
                 _id: 1,
                 title: 'Graph Database',
-                description: 'Filler',
+                description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
                 belongsTo: [0, 5]
             },
             {
                 _id: 2,
                 title: 'Full Stack Development',
-                description: 'Filler',
+                description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
                 belongsTo: [0, 1, 4]
             },
             {
                 _id: 3,
                 title: 'User Interface Design',
-                description: 'Filler',
+                description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
                 belongsTo: [0, 2]
             },
             {
                 _id: 4,
                 title: 'JavaScript Development',
-                description: 'Filler',
+                description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
                 belongsTo: [0, 1]
             },
             {
                 _id: 5,
                 title: 'Advanced Object Oriented Programming',
-                description: 'Filler',
+                description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
                 belongsTo: [0, 6]
             },
             {
                 _id: 6,
                 title: 'User Experience Design',
-                description: 'Filler',
+                description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
                 belongsTo: [0, 2]
             }
