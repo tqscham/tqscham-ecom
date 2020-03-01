@@ -1,5 +1,12 @@
 .review-form {
 
+    &__legend{
+        grid-row: legend-s/legend-e;
+        grid-column: 1/-1;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 11px;
+    }
+
     &__products {
         grid-column: 1/-1;
         grid-row: products-s/products-e;
@@ -7,8 +14,6 @@
         display: grid;
         grid-template-rows: repeat(auto-git, 80px);
         row-gap: 12px;
-
-        align-self: center;
     }
 
     &__line {
