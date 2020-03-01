@@ -34,7 +34,7 @@ function CartFooter ({className, products}) {
 
 function CartContent({className, products}){
     let count = products.length;
-    let productsJSX = products.map(product => <CartProduct key={product._id} />)
+    let productsJSX = products.map(product => <CartProduct {...product} key={product._id} />)
     return (
         <div className={`${className} cart-content`}>
             <div className='cart-content__title'>

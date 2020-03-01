@@ -4,7 +4,8 @@ import GreenPriceTag from '../greenPriceTag';
 
 class ShopProduct extends Component {
     render() {
-        const { _id, title, description, price } = this.props;
+        const { product, quantity } = this.props;
+        const { title, description, price } = product;
         return (
             <div key={_id} className='shop-product'>
                 <div className='shop-product__front'>
@@ -19,7 +20,7 @@ class ShopProduct extends Component {
                         {description}
                     </div>
                     <GreenPriceTag className='shop-product__back__price' title={price} />
-                    <Quantity className='shop-product__back__quantity' quantity={1} />
+                    <Quantity className='shop-product__back__quantity' quantity={quantity} />
                     <div className='shop-product__back__add-to-cart'>
                         Add to Cart
                     </div>
