@@ -5,6 +5,7 @@ import Icons from '../../helpers/icons';
 import CartProduct from './cartProduct';
 import * as actions from '../../actions';
 import CartButton from './cartButton';
+import history from '../../history';
 
 
 
@@ -12,7 +13,7 @@ function CartFooter ({className, products}) {
     const price = 420.69;
     return (
         <div className={`${className} cart-footer`}>
-            <a className='cart-footer__checkout'>
+            <a onClick={() => history.push('/order/review')} className='cart-footer__checkout'>
                 Checkout
             </a>
             <div className='cart-footer__subtotal'>
