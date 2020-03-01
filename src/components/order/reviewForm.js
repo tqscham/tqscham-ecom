@@ -12,6 +12,7 @@ class ReviewForm extends Component {
         return (
             <form onSubmit={handleSubmit} className={`${className} review-form`}>
                 
+                <div className='review-form__line'></div>
 
                 <div className='review-form__line'></div>
                 
