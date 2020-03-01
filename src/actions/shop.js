@@ -30,49 +30,56 @@ export function fetchShopProducts() {
                 title: 'JavaScript in the Browser',
                 description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 1,
                 title: 'Graph Database',
                 description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
-                belongsTo: [0, 5]
+                belongsTo: [0, 5],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 2,
                 title: 'Full Stack Development',
                 description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
-                belongsTo: [0, 1, 4]
+                belongsTo: [0, 1, 4],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 3,
                 title: 'User Interface Design',
                 description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 4,
                 title: 'JavaScript Development',
                 description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 5,
                 title: 'Advanced Object Oriented Programming',
                 description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 6,
                 title: 'User Experience Design',
                 description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                 price: 1.99,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: 'http://via.placeholder.com/80x80'
             }
         ]
     })

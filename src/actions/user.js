@@ -30,7 +30,8 @@ export function fetchCartProducts() {
                     title: 'JavaScript in the Browser',
                     description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                     price: 1.99,
-                    belongsTo: [0, 1]
+                    belongsTo: [0, 1],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 2
             },
@@ -41,7 +42,8 @@ export function fetchCartProducts() {
                     title: 'Graph Database',
                     description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
                     price: 1.99,
-                    belongsTo: [0, 5]
+                    belongsTo: [0, 5],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 1
             }
