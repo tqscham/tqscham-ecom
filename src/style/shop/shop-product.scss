@@ -66,7 +66,7 @@
     grid-template-rows: 15px [title-s] 30px [title-e description-s] 1fr [description-e price-s] 25px [price-e footer-s] 65px [footer-e] 15px;
     grid-template-columns: 15px [s] 1fr [e] 15px;
     justify-items: start;
-    grid-row-gap: 7px;
+    row-gap: 7px;
 
     & > * {
         grid-column: s/e;

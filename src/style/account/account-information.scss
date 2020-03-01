@@ -14,7 +14,7 @@
         [email-e city-e state-s zipcode-s] 64px [state-e zipcode-e change-password-s current-s] 64px
         [change-password-e current-e new-s] 64px [new-e confirm-s] 64px [confirm-e] minmax(20px, 81px)
         [line-s] 26px [line-e buttons-s] 38px [buttons-e] ;
-        grid-row-gap: 1.4em;
+        row-gap: 1.4em;
     }
 }
 
