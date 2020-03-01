@@ -1,12 +1,87 @@
 import {
     SET_USER_PURCHASES,
-    SET_PURCHASE_DETAIL
+    SET_PURCHASE_DETAIL,
+    SET_CART_PRODUCTS
 } from './types';
 
 export function setPurchaseDetail(_id) {
     return({
         type: SET_PURCHASE_DETAIL,
         payload: _id
+    })
+}
+
+export function fetchCartProducts() {
+    return ({
+        type: SET_CART_PRODUCTS,
+        payload: [
+            {
+                _id: 0,
+                product: {
+                    _id: 0,
+                    title: 'JavaScript in the Browser',
+                    description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
+                    price: 1.99,
+                    belongsTo: [0, 1]
+                },
+                quantity: 2
+            },
+            {
+                _id: 1,
+                product: {
+                    _id: 1,
+                    title: 'Graph Database',
+                    description: 'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. Its a Sith legend.',
+                    price: 1.99,
+                    belongsTo: [0, 5]
+                },
+                quantity: 1
+            }
+            
+        ]
+    })
+}
+
+export function fetchShopCategories(done) {
+    return ({
+        type: SET_SHOP_CATEGORIES,
+        payload: [
+            {
+                _id: 0,
+                title: 'All',
+                active: true
+            },
+            {
+                _id: 1,
+                title: 'JavaScript',
+                active: false
+            },
+            {
+                _id: 2,
+                title: 'UI/UX',
+                active: false
+            },
+            {
+                _id: 3,
+                title: 'Linux',
+                active: false
+            },
+            {
+                _id: 4,
+                title: 'Python',
+                active: false
+            },
+            {
+                _id: 5,
+                title: 'UML',
+                active: false
+            },
+            {
+                _id: 6,
+                title: 'Ruby',
+                active: false
+            }
+        ]
     })
 }
 

@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { connect } from 'react-redux';
+
 import Icons from '../../helpers/icons';
-import CartProduct from './cartProduct'
+import CartProduct from './cartProduct';
+import * as actions from '../../actions';
+
 
 function CartButton ({ className, symbol }) {
     return (
@@ -30,7 +34,7 @@ function CartFooter ({className, products}) {
 
 function CartContent({className, products}){
     let count = products.length;
-    let productsJSX = products.map(product => <CartProduct key={product} />)
+    let productsJSX = products.map(product => <CartProduct key={product._id} />)
     return (
         <div className={`${className} cart-content`}>
             <div className='cart-content__title'>
@@ -45,6 +49,9 @@ function CartContent({className, products}){
 }
 
 class ShopCart extends Component {
+    componentDidMount() {
+        this.props.fetchCartProducts();
+    }
     constructor(props) {
         super(props);
 
@@ -55,10 +62,19 @@ class ShopCart extends Component {
         return (
             <div className={`${className} shop-cart`}>
                 <CartButton className='shop-cart__toggle' symbol='fas fa-times'/>
-                <CartContent className='shop-cart__content' products={[4, 8, 90, 1, 78, 38, 29, 4, 8, 90, 1, 78, 38, 29, 90]} />
+                <CartContent className='shop-cart__content' products={this.props.cartProducts} />
             </div>
         );
     }
 }
+
+function mapStateToProps(state) {
+    const { cartProducts } = state.user;
+    return {
+        cartProducts
+    }
+}
+
+ShopCart = connect(mapStateToProps, actions)(ShopCart);
 
 export default ShopCart;

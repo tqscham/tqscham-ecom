@@ -1,9 +1,11 @@
 import {
     SET_USER_PURCHASES,
-    SET_PURCHASE_DETAIL
+    SET_PURCHASE_DETAIL,
+    SET_CART_PRODUCTS
 } from '../actions/types';
 
 const INITIAL_STATE = {
+    cartProducts: [],
     purchases: [],
     purchaseDetail: {
         _id: -1,
@@ -32,6 +34,11 @@ export default function(state = INITIAL_STATE, action) {
                     purchaseDetail = purchase;
                 }
             })
+        case SET_CART_PRODUCTS:
+            return{
+                ...state,
+                cartProducts: action.payload
+            }
             
             return {
                 ...state,
