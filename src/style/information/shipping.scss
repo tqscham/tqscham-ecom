@@ -1,0 +1,67 @@
+.shipping {
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+
+    &__form {
+        display: grid;
+        grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e use-s] 1fr [use-e] 1fr;
+        row-gap: 15px;
+        grid-template-rows: [name-s] 64px [name-e] 35px [address-s] 64px [address-e city-s] 64px [city-e state-zip-s] 64px [state-zip-e] minmax(20px, 81px) [line-s] 26px [line-e buttons-s] 38px [buttons-e];
+    }
+}
+
+.shipping-form {
+
+    &__name {
+        grid-row: name-s/name-e;
+
+    }
+
+    &__address {
+        grid-row: address-s/address-e;
+
+    }
+
+    &__city {
+        grid-row: city-s/city-e;
+
+    }
+
+    &__zipcode,
+    &__state {
+        grid-row: state-zip-s/state-zip-e;
+        grid-column: back-s;
+        input {
+            width: 200px;
+        }
+
+    }
+
+    &__zipcode {
+        transform: translateX(226px);
+    }
+
+    &__line {
+        grid-row: line-s/line-e;
+        border-top: 1px solid #ccc;
+        grid-column: 1/-1;
+
+    }
+
+    &__back {
+        grid-row: buttons-s/buttons-e;
+        grid-column: back-s/back-e;
+    }
+
+    &__use-this-address {
+        grid-row: buttons-s/buttons-e;
+        grid-column: use-s/use-e;
+
+    }
+}
+
+    @media only screen and (max-width: 1000px) {
+        .shipping-form {
+            transform: scale(0.75)
+        }
+    }
